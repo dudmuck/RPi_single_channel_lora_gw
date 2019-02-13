@@ -1,0 +1,73 @@
+{
+    "i2c_slave_address": "0x50",
+    "irqPin": 7,
+    "serviceRate_us": 2000,
+    "preambleSymbs": 8,
+    "beaconInterval": 128,
+    "beaconSize": 6,
+    "appEui": "00000000000000000000000000000000",
+    "tx_dbm": 17,
+    "rssiSamples": 64,
+	"motes": [
+		{ "name": "L073RZ+gps", "devEui": "3339343758358515", "key": "3efcf281440d8a8c3fd48824abd32252" },
+		{ "name": "L152RE+led", "devEui": "313430365c337517", "key": "3efcf281440d8a8c3fd48824abd32252" }
+        
+	],
+
+    "band": "915band",
+    "915band": {
+        "spreadingFactor": 7,
+        "bwKHz": 500,
+        "firstChannelHz": 910000000,
+        "channelStepHz": 800000,
+        "numChannels": 8
+    },
+    "434band": {
+        "spreadingFactor": 7,
+        "bwKHz": 125,
+        "firstChannelHz": 433320000,
+        "channelStepHz": 200000,
+        "numChannels": 7
+    },
+    "2g4band": {
+        "spreadingFactor": 7,
+        "bwKHz": 200,
+        "firstChannelHz": 2486900000,
+        "channelStepHz": 300000,
+        "numChannels": 8
+    },
+    "timing125KHz": {
+        "sf12": { "SLOT_STEPPING": 1067, "PERIODICITY_SLOTS": 3 },
+        "sf11": { "SLOT_STEPPING":  533, "PERIODICITY_SLOTS": 3 },
+        "sf10": { "SLOT_STEPPING":  267, "PERIODICITY_SLOTS": 3 },
+        "sf9":  { "SLOT_STEPPING":  133, "PERIODICITY_SLOTS": 3 },
+        "sf8":  { "SLOT_STEPPING":   67, "PERIODICITY_SLOTS": 3 },
+        "sf7":  { "SLOT_STEPPING":   33, "PERIODICITY_SLOTS": 3 },
+        "sf6":  { "SLOT_STEPPING":   16, "PERIODICITY_SLOTS": 3 },
+        "sf5":  { "SLOT_STEPPING":    8, "PERIODICITY_SLOTS": 3 }
+    },
+    "timing200KHz": {
+        "sf12": { "SLOT_STEPPING": 320, "PERIODICITY_SLOTS": 4 },
+        "sf11": { "SLOT_STEPPING": 160, "PERIODICITY_SLOTS": 4 },
+        "sf10": { "SLOT_STEPPING": 160, "PERIODICITY_SLOTS": 8 },
+        "sf9":  { "SLOT_STEPPING":  80, "PERIODICITY_SLOTS": 8 },
+        "sf8":  { "SLOT_STEPPING":  40, "PERIODICITY_SLOTS": 8 },
+        "sf7":  { "SLOT_STEPPING":  20, "PERIODICITY_SLOTS": 8 },
+        "sf6":  { "SLOT_STEPPING":  20, "PERIODICITY_SLOTS": 16 },
+        "sf5":  { "SLOT_STEPPING":  20, "PERIODICITY_SLOTS": 32 }
+    },
+    "help": [
+        "PERIODICITY_SLOTS is number of end devices on network",
+        "SLOT_STEPPING is time given to each end device (for uplink with downlink time), in 30ms steps"
+    ],
+    "timing500KHz": {
+        "sf12": { "SLOT_STEPPING": 267, "PERIODICITY_SLOTS": 15},
+        "sf11": { "SLOT_STEPPING": 133, "PERIODICITY_SLOTS": 24},
+        "sf10": { "SLOT_STEPPING":  67, "PERIODICITY_SLOTS": 24},
+        "sf9":  { "SLOT_STEPPING":  33, "PERIODICITY_SLOTS": 24},
+        "sf8":  { "SLOT_STEPPING":  16, "PERIODICITY_SLOTS": 24},
+        "sf7":  { "SLOT_STEPPING":   8, "PERIODICITY_SLOTS": 8 },
+        "sf6":  { "SLOT_STEPPING":   4, "PERIODICITY_SLOTS": 8 },
+        "sf5":  { "SLOT_STEPPING":   2, "PERIODICITY_SLOTS": 8 }
+    }
+}
