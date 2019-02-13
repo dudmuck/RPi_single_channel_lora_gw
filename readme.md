@@ -1,4 +1,5 @@
 # LoRa single channel gateway
+
 Synchronous wireless star network.
 
 Use case:
@@ -14,11 +15,17 @@ Wireless end devices use [single channel endnode](https://os.mbed.com/users/dudm
 
 # build instructions
 for raspberry pi, initial installation:
+* Clone this repository with ``--recurse-submodule``
 * if ``/dev/i2c-1`` doesnt exist, use ``raspi-config`` to enable it, or edit ``/boot/config.txt`` to uncomment ``dtparam=i2c_arm=on``
 * [install wiringPi](http://wiringpi.com/download-and-install/) library
 * ``sudo apt install libjson-c-dev libi2c-dev swig``
+* if ``i2c_lora_master`` directory empty, then you didnt clone this repository with ``--recurse-submodule``, then:
+  * ``cd i2c_lora_master``
+  * ``git submodule init``
+  * ``git submodule update``
+  * ``cd ..``
 
-Build:
+From project root directory, build:
 * ``mkdir build``
 * ``cd build``
 * ``cmake ..`` 
