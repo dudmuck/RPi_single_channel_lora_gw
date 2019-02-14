@@ -36,7 +36,7 @@ see [lib_i2c_slave_block](https://os.mbed.com/users/dudmuck/code/lib_i2c_slave_b
 
 4 pins required: SDA, SCL, interrupt and ground.   Additional interrupt needed for each slave device.
 
-![RPi lora](/pi_lora_.svg?raw=true)
+![RPi lora](/pi_lora_half.png?raw=true)
 
 # gateway configuration
 Configuration file ``gw_conf.json``:
